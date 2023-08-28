@@ -218,3 +218,73 @@ body {
   height: 250px;
   object-fit: cover;
 }
+
+/* Trending */
+#trends h2{
+  text-align: center;
+  color: #dcae96;
+}
+#trends .sub {
+  text-align: center;
+  color: #d2b4bc;
+  margin: 15px 0px;
+}
+#trends h4 span {
+  color: #453b3e;
+}
+#trends .pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#trends .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #dcae96;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(88, 72, 72, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+#trends .pro:hover {
+  box-shadow: 20px 20px 30px rgba(104, 88, 88, 0.07);
+}
+#trends .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+#trends .pro .cart {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #f5e0b9;
+  color: #453b3e;
+}
+#trends .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+#trends .pro .des span {
+  color: #dcae96;
+  font-size: 12px;
+}
+#trends .pro .des>h5 {
+  padding-top: 7px;
+  color: #453b3e;
+  font-size: 14px;
+}
+#trends .pro .des i {
+  font-size: 12px;
+  color: #e2b55a;
+}
+#trends .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #453b3e;
+}
+
