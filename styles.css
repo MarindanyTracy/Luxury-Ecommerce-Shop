@@ -48,14 +48,15 @@ button.normal {
   transition: 0.2s;
 }
 body {
-  width: 100%; 
+  width: 100%;
+  align-items: center; 
 }
 /* Header */
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 10px 10px;
   background: #f5e0b9;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   z-index: 999;
@@ -96,9 +97,10 @@ body {
 }
 
 .logo {
-  width: 60px;
+  width: 150px;
   height: 60px;
   object-fit: contain;
+  /* transform: scale(0.1); */
 }
 
 /* Hero Section */
@@ -402,4 +404,130 @@ body {
 }
 .prod1 p {
   font-size: 18px;
+}
+
+/* Accesories */
+#accesories h4 {
+  text-align: center;
+  color:#dcae96;
+}
+#accesories h2 {
+  text-align: center;
+  color: #c7aeb6;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.acess{
+  max-width: 1020px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.accesory {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+.accesory .image {
+  width: 70%;
+  position: relative;
+}
+.accesory .image img {
+  width: 200px;
+  object-fit: cover;
+  z-index: 1;
+}
+.accesory .image .rating {
+  position: absolute;
+  bottom: -17px;
+  left: 50px;
+}
+.accesory .image .rating p {
+  font-size: 13px;
+  color: #453b3e;
+  background: #f5e0b9;
+  padding: 7px 3px;
+}
+.accesory .image .rating p i {
+  color: #e2b55a;
+  font-size: 12px;
+}
+.accesory h3 {
+  color: #453b3e;
+  margin: 5px;
+}
+.accesory h6 {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 5px;
+}
+.accesory p {
+  font-weight: 700;
+  font-size: 15px;
+}
+.accesory p .price {
+  font-weight: normal;
+  font-size: 12px;
+  margin: 3px;
+  text-decoration: line-through;
+}
+.accesory p .danger {
+  font-size: 12px;
+  font-weight: normal;
+  color: red;
+}
+
+/* Letter */
+#letter hr {
+  border: 0.3px solid #453b3e;
+}
+.letter {
+  display: flex;
+  margin: 40px;
+  color: #453b3e;
+}
+.letter .left {
+  flex-basis: 70%;
+}
+.letter .left h2 {
+  font-size: 60px;
+  letter-spacing: 1;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.letter .left h4 {
+  font-weight: normal;
+}
+.letter .right {
+  flex-basis: 30%;
+}
+.letter .right h6 {
+  font-size: 12px;
+  font-weight: normal;
+}
+.letter .right h6 a {
+  text-decoration: none;
+  color: red;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.info h4{
+  font-weight: bold;
+  font-size: 30px;
+  color: #453b3e;
+}
+.info h4 input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #453b3e;
+  font-weight: normal;
+}
+.info h3 {
+  color: #453b3e;
 }
