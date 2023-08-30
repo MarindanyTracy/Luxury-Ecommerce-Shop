@@ -380,6 +380,7 @@ body {
   min-width: 200px;
   margin-bottom: 50px;
   text-align: left;
+  position: relative;
 }
 .prod1 .desc {
   display: flex;
@@ -387,10 +388,36 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
-.prod1 img {
+.prod1 img{
   width: 100%;
   height: 70%;
   object-fit: cover;
+}
+.prod1 .inner img,
+.prod1 .inner1 img,
+.prod1 .inner2 img,
+.prod1 .inner3 img,
+.prod1 .inner4 img
+ {
+  width: 100%;
+  height: 265px;
+}
+.prod1 .inner,
+.prod1 .inner1,
+.prod1 .inner2,
+.prod1 .inner3,
+.prod1 .inner4 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+.prod1:hover .inner,
+.prod1:hover .inner1,
+.prod1:hover .inner2,
+.prod1:hover .inner3,
+.prod1:hover .inner4 {
+  display: block;
 }
 .prod1 h4 {
   padding: 8px 0;
@@ -430,19 +457,32 @@ body {
   flex-direction: column;
   flex-basis: 25%;
 }
+.accesory:hover {
+  border: 0.8px solid #453b3e;
+  border-radius: 10px;
+  padding: 5px;
+}
+.accesory:hover .image img  {
+  width: 100%;
+}
+.accesory:hover .image .rating {
+  position: absolute;
+  left: 75px;
+  bottom: -17px;
+}
 .accesory .image {
-  width: 70%;
+  width: 100%;
   position: relative;
 }
 .accesory .image img {
-  width: 200px;
+  width: 90%;
   object-fit: cover;
   z-index: 1;
 }
 .accesory .image .rating {
   position: absolute;
   bottom: -17px;
-  left: 50px;
+  left: 70px;
 }
 .accesory .image .rating p {
   font-size: 13px;
@@ -529,5 +569,64 @@ body {
   font-weight: normal;
 }
 .info h3 {
+  color: #453b3e;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #453b3e;
+}
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo {
+  margin-bottom: 30px;
+
+}
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer .col a {
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #453b3e;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i{
+ color: #453b3e;
+ padding-right: 4px;
+ cursor: pointer;
+}
+footer .install .row img{
+  border: 1px solid #453b3e;
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .follow i:hover{
+  color: #9d888e;
+}
+footer a:hover {
+  color: #9d888e;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
   color: #453b3e;
 }
