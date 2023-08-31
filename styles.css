@@ -704,6 +704,9 @@ footer .copyright {
 #prod1 {
   margin-top: 0px;
 }
+#prod1 h4 {
+ padding: 10px;
+}
 #trends .pro-container {
   justify-content: center;
 }
@@ -713,6 +716,24 @@ footer .copyright {
 #news {
   height: 25vh;
 }
+#news h4 {
+  padding: 20px;
+  font-size: 18px;
+}
+#news h6 {
+  font-size: 25px;
+}
+#news h2 {
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+#news h2 span {
+  font-size: 20px;
+}
+#news button {
+  margin-top: 0;
+}
 .unique {
   justify-content: center;
 }
@@ -721,10 +742,135 @@ footer .copyright {
 }
 .acess {
   justify-content: center;
+  align-items: center;
 }
 .accesory {
   flex-basis: 30%;
   gap: 10px;
+  justify-content: center;
+}
+.accesory .image .rating {
+  position: absolute;
+  bottom: -7px;
+  left: 50px;
+}
+}
+
+@media (max-width: 477px) {
+  #hero {
+    background-position: top 90% right 50%;
+    padding: 0 20px;
+}
+#hero h2, #hero p {
+  color: #453b3e;
+}
+#hero h4 {
+  padding-bottom: 10px;
+  color: #453b3e;
+}
+h4 {
+  font-size: 15px;
+}
+h1 {
+  font-size: 38px;
+  line-height: 40px;
+}
+h2 {
+  margin-top: 5px;
+  font-size: 30px;
+  line-height: 15px;
+}
+p {
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+}
+#hero button {
+  padding: 14px 60px;
+  margin-top: 15px;
+}
+.section-p1 {
+  padding: 20px;
+}
+#features .fe-box {
+  width: 155px;
+  margin: 0 0 15px 0;
+}
+#features {
+  justify-content: space-between;
+}
+.collections {
+  width: 100%;
+}
+#trends .pro {
+  width: 100%;
+}
+h6 {
+  font-weight: 700;
+  font-size: 10px;
+}
+#news h2 {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+}
+button.normal {
+  margin-top: 10px;
+}
+#unique h6 {
+  margin: 15px 10px;
+}
+.unique {
+  width: 100%;
+}
+.unique .prod1 {
+  min-width: 300px;
+  text-align: center;
+}
+#accesories h2 {
+  text-align: center;
+  color: #c7aeb6;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.accesory {
+  flex-basis: 50%;
+  gap: 10px;
+}
+.letter {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.letter .left {
+  flex-basis: 100%;
+}
+.letter .left h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.letter .left h4 {
+  margin-bottom: 15px;
+}
+.letter .right h6 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.info h4 {
+  margin: 20px 0;
+}
+.info h3 {
+  margin-top: 10px;
+}
+.footer {
+  margin: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 }
