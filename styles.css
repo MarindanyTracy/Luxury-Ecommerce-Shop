@@ -1054,7 +1054,9 @@ text-align: center;
   color: var(--secondary-color);
 }
 /* Cart Page */
-
+#cart {
+  overflow-x: auto;
+}
 #cart-head {
   color: var(--primary-color);
   width: 100%;
@@ -1645,5 +1647,26 @@ h6 {
 }
 #form-details form {
   width: 100%;
+}
+/* Cart page */
+#cart-head {
+  width: 100%;
+  height: 20vh;
+}
+#cart-add {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#coupon {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#subtotal {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #e2e1e1;
+  padding: 30px;
 }
 }
