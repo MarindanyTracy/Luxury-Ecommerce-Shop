@@ -23,9 +23,9 @@
           <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a  href="contact.html">Contact</a></li>
           <li id="bag">
-            <a href="cart.html">
+            <a class="active" href="cart.html">
               <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             </a>
           </li>
@@ -38,93 +38,91 @@
       </div>
     </section>
 
-    <section id="contact-head" class="section-p1"></section>
-
-    <section id="contact-details" class="section-p1">
-      <div class="details">
-        <span>Talk to us today</span>
-        <h2>Visit one of our stores or get in touch with us</h2>
-        <h3>Main Office</h3>
-        <div>
-          <li>
-            <i class="fa fa-map"></i>
-            <p>465 Cathy Road Westlands, Nairobi Kenya</p>
-          </li>
-          <li>
-            <i class="fa fa-envelope"></i>
-            <p>contact@example.com</p>
-          </li>
-          <li>
-            <i class="fa fa-phone-alt"></i>
-            <p>+25472000000020</p>
-          </li>
-          <li>
-            <i class="fa fa-clock"></i>
-            <p>Mon - Sat: 8:00am to 17:00pm</p>
-          </li>
-        </div>
-      </div>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.364608379672!2d36.79972893281907!3d-1.2681032269238899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173c0a1f9de7%3A0xad2c84df1f7f2ec8!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1693897986334!5m2!1sen!2ske"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+    <section id="cart-head" class="section-p1">
     </section>
 
-    <section id="form-details" class="section-p1">
-      <form action="">
-        <span>Leave a message</span>
-        <h2>We love hearing from you</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <input type="text" placeholder="Your Subject">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <button class="normal">Submit</button>
-      </form>
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+            <td><img src="Images/Jumpsuit/j2.jpg" alt=""></td>
+            <td>Yellow Sleeveless Jumpsuit</td>
+            <td>$130</td>
+            <td><input type="number" value="1" id=""></td>
+            <td>$130</td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+            <td><img src="Images/silk/s4.jpg" alt=""></td>
+            <td>Red silk short dress</td>
+            <td>$75</td>
+            <td><input type="number" value="2" id=""></td>
+            <td>$140</td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+            <td><img src="Images/silk/s3.jpg" alt=""></td>
+            <td>Black Cotton dress</td>
+            <td>$75</td>
+            <td><input type="number" value="1" id=""></td>
+            <td>$75</td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+            <td><img src="Images/suits/d4.jpg" alt=""></td>
+            <td>Nude Two-piecer</td>
+            <td>$120</td>
+            <td><input type="number" value="1" id=""></td>
+            <td>$120</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div class="people">
-        <div>
-          <img src="Images/people/p1.jpg" alt="">
-          <p><span>Wendy Johns</span> Senior Designer <br> Phone: +25470020020021 <br> Email: contact@example.com</p>
-        </div>
-        <div>
-          <img src="Images/people/p2.jpg" alt="">
-          <p><span>Linda Weningtons</span> Senior Marketing Manager <br> Phone: +25470020020000 <br> Email: contact@example.com</p>
-        </div>
-        <div>
-          <img src="Images/people/p4.jpg" alt="">
-          <p><span>Hillary Clinton</span> Top Client <br> Phone: +25470020020000 <br> Email: contact@example.com</p>
-        </div>
-       
-      </div>
+
     </section>
 
-    <section id="letter" class="section-p1">
-      <hr />
-      <div class="letter">
-        <div class="left">
-          <h2>Let's stay in touch</h2>
-          <h4>Sign up today and get 20% off* your first order</h4>
-        </div>
-        <div class="right">
-          <h6>
-            To opt out, click the unsubscribe link on our emails by signing up
-            you agree to our <a href="#">Terms & Privacy.</a>
-          </h6>
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Discount Code</h3>
+        <div>
+          <input type="text" placeholder="Enter your discount code" id="">
+          <button class="normal">Apply</button>
         </div>
       </div>
-      <div class="info">
-        <h4>| <input type="email" placeholder="Enter your Email" /></h4>
-        <h3>SIGN UP!</h3>
+      <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>$465</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$515</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed to Payment</button>
       </div>
-      <hr />
+      
     </section>
+
+
+
 
     <footer class="section-p1">
       <div class="footer">
